@@ -44,6 +44,8 @@ export default class KatexMath extends Plugin {
             view.on( 'execute', () => {
                 console.log("Button pressed");
             } );
+
+            return view;
         } );
     }
 
