@@ -11,6 +11,6 @@ To just start up the provided example:
 docker build -t ck5-katex-math:latest .
 docker run -p 8080:8080 ck5-katex-math:latest
 
-To access container:
+To access image:
 
-docker exec -it ck5-katex-math:latest /bin/bash
+docker run -it ck5-katex-math:latest /bin/bash

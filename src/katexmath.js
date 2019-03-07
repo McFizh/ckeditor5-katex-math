@@ -1,7 +1,9 @@
 import Plugin from '@ckeditor/ckeditor5-core/src/plugin';
+import ButtonView from '@ckeditor/ckeditor5-ui/src/button/buttonview';
+
 import pluginIcon from '../theme/icons/icon.svg';
 
-class KatexMath extends Plugin {
+export default class KatexMath extends Plugin {
 
     init() {
         const editor = this.editor;
@@ -9,7 +11,7 @@ class KatexMath extends Plugin {
         // Create button for toolbar
         this.createButton();
 
-        // Register: <span class='math-tex'></span>   element for ckeditor model
+        // Register: <span class='math-tex'></span> element for ckeditor model
         editor.model.schema.register('span', {
             allowWhere: '$text',
             allowContentOf: '$block',
@@ -17,7 +19,10 @@ class KatexMath extends Plugin {
             allowAttributes: [ 'class' ],
         });
 
-        editor.conversion.elementToElement({model: 'span', view: 'span'});
+        editor.conversion.elementToElement({
+            model: 'span', 
+            view: 'span'
+        });
 
         editor.conversion.attributeToAttribute({
             model: { name: 'span', key: 'class' },
@@ -27,7 +32,7 @@ class KatexMath extends Plugin {
     }
 
     createButton() {
-        editor.ui.componentFactory.add( 'insertMath', locale => {
+        this.editor.ui.componentFactory.add( 'insertMath', locale => {
             const view = new ButtonView( locale );
 
             view.set( {
