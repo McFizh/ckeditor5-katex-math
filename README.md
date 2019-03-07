@@ -8,7 +8,7 @@ Note: WIP project, so plugin is mostly useless for the time being.
 
 To just start up the provided example:
 
-docker build -t ck5-katex-math:latest .
+docker build -t ck5-katex-math:latest .\
 docker run -p 8080:8080 ck5-katex-math:latest
 
 To access image:

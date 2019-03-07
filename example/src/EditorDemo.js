@@ -5,7 +5,7 @@ import BoldPlugin from '@ckeditor/ckeditor5-basic-styles/src/bold';
 import ItalicPlugin from '@ckeditor/ckeditor5-basic-styles/src/italic';
 import ParagraphPlugin from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 
-import KatexMathPlugin from '../../src/katexmath.js';
+import KatexMathPlugin from 'ckeditor5-katex-math';
 
 export default class EditorDemo {
     constructor() {
