@@ -12,23 +12,19 @@ export default class KatexMath extends Plugin {
         this.createButton();
 
         // Register: <span class='math-tex'></span> element for ckeditor model
-        editor.model.schema.register('span', {
+        editor.model.schema.register('mathtex', {
             allowWhere: '$text',
             allowContentOf: '$block',
             isBlock: true,
-            allowAttributes: [ 'class' ],
         });
 
         editor.conversion.elementToElement({
-            model: 'span', 
-            view: 'span'
+            model: 'mathtex',
+            view: {
+                name: 'span',
+                classes: 'math-tex'
+            }
         });
-
-        editor.conversion.attributeToAttribute({
-            model: { name: 'span', key: 'class' },
-            view: { name: 'span', key: 'class' },
-        });   
-
     }
 
     createButton() {
