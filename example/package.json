@@ -30,7 +30,6 @@
     "@ckeditor/ckeditor5-editor-classic": "^12.1.0",
     "@ckeditor/ckeditor5-essentials": "^11.0.1",
     "@ckeditor/ckeditor5-paragraph": "^11.0.1",
-    "@ckeditor/ckeditor5-theme-lark": "^13.0.1",
-    "ckeditor5-katex-math": "0.0.2"
+    "@ckeditor/ckeditor5-theme-lark": "^13.0.1"
   }
 }

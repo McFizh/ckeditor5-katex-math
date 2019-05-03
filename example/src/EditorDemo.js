@@ -7,7 +7,7 @@ import ParagraphPlugin from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 
 import CKEditorInspector from '@ckeditor/ckeditor5-inspector';
 
-import KatexMathPlugin from 'ckeditor5-katex-math';
+import KatexMathPlugin from '../../src/katexmath.js';
 
 export default class EditorDemo {
     constructor() {
@@ -25,7 +25,9 @@ export default class EditorDemo {
                     ParagraphPlugin
                 ],
                 toolbar: [
-                    'bold', 'italic', 'insertMath',
+                    'bold',
+                    'italic',
+                    'insertMath',
                 ],
             })
             .then( editor => {

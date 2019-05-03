@@ -15,7 +15,7 @@ export default class KatexMath extends Plugin {
         editor.model.schema.register('mathtex', {
             allowWhere: '$text',
             allowContentOf: '$block',
-            isBlock: true,
+            isLimit: true,
         });
 
         editor.conversion.elementToElement({
