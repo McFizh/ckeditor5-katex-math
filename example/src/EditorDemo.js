@@ -10,28 +10,33 @@ import CKEditorInspector from '@ckeditor/ckeditor5-inspector';
 import KatexMathPlugin from '../../src/katexmath.js';
 
 export default class EditorDemo {
-    constructor() {
-        this.instance = null;
-    }
+  constructor() {
+    this.instance = null;
+  }
 
-    createEditor(el) {
-        ClassicEditor
-            .create(el, {
-                plugins: [
-                    BoldPlugin,
-                    EssentialsPlugin,
-                    ItalicPlugin,
-                    KatexMathPlugin,
-                    ParagraphPlugin
-                ],
-                toolbar: [
-                    'bold',
-                    'italic',
-                    'insertMath',
-                ],
-            })
-            .then( editor => {
-                CKEditorInspector.attach('editor',editor);
-            } );
-    }
+  getData() {
+    return this.instance.getData();
+  }
+
+  createEditor(el) {
+    ClassicEditor
+      .create(el, {
+        plugins: [
+          BoldPlugin,
+          EssentialsPlugin,
+          ItalicPlugin,
+          KatexMathPlugin,
+          ParagraphPlugin
+        ],
+        toolbar: [
+          'bold',
+          'italic',
+          'insertMath',
+        ],
+      })
+      .then(editor => {
+        CKEditorInspector.attach('editor', editor);
+        this.instance = editor;
+      });
+  }
 }
