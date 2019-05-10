@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/McFizh/ckeditor5-katex-math.svg?branch=master)](https://travis-ci.org/McFizh/ckeditor5-katex-math)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ckeditor5-katex-math&metric=alert_status)](https://sonarcloud.io/dashboard?id=ckeditor5-katex-math)
 
 # ckeditor5-katex-math
 
@@ -6,7 +7,18 @@ Katex math plugin for ckeditor 5. Example folder contains demo showing the plugi
 
 Note: WIP project, so plugin is mostly useless for the time being.
 
-# Setting up test environment
+# Quickly try out the plugin
+
+Run the following commands:
+
+npm ci
+cd example
+npm ci
+npm run start:dev
+
+Then open browser to address: http://localhost:8080  (or 8081, if 8080 is reserved)
+
+# Setting up test/dev environment
 
 To just start up the provided example:
 
