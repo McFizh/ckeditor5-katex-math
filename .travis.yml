@@ -1,7 +1,9 @@
 language: node_js
 node_js:
   - "10"
-
+addons:
+  sonarcloud:
+    organization: "mcfizh-github"
 script:
   - npm run lint
   - soner-scanner
