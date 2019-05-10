@@ -10,10 +10,16 @@
   ],
   "author": "Pekka Harjamäki",
   "license": "MIT",
+  "scripts": {
+    "lint": "eslint ."
+  },
   "dependencies": {
     "@ckeditor/ckeditor5-core": "^12.1.0",
     "@ckeditor/ckeditor5-engine": "^13.1.0",
     "@ckeditor/ckeditor5-ui": "^12.1.0",
     "katex": "^0.10.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0"
   }
 }

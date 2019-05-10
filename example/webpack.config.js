@@ -9,7 +9,7 @@ module.exports = {
     filename: 'index.js',
   },
 
-  mode: "development",
+  mode: 'development',
 
   resolve: {
     extensions: ['.js'],
@@ -40,7 +40,7 @@ module.exports = {
       }, {
         test: /\.svg$/,
         use: [
-          { loader: "raw-loader" },
+          { loader: 'raw-loader' },
         ]
       }, {
         oneOf: [
