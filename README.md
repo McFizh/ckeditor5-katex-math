@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/McFizh/ckeditor5-katex-math.svg?branch=master)](https://travis-ci.org/McFizh/ckeditor5-katex-math)
+
 # ckeditor5-katex-math
 
 Katex math plugin for ckeditor 5. Example folder contains demo showing the plugin in action (see next section), content is not needed for plugin to work.
