@@ -6,4 +6,4 @@ addons:
     organization: "mcfizh-github"
 script:
   - npm run lint
-  - soner-scanner
+  - sonar-scanner
