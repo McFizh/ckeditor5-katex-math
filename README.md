@@ -7,7 +7,9 @@ Katex math plugin for ckeditor 5. Example folder contains demo showing the plugi
 
 Note: WIP project, so plugin is mostly useless for the time being.
 
-# Quickly try out the plugin
+![Edit UI](docs/images/screenshot_1.png)
+
+# To try out the plugin locally:
 
 Run the following commands:
 
@@ -18,7 +20,7 @@ npm run start:dev
 
 Then open browser to address: http://localhost:8080  (or 8081, if 8080 is reserved)
 
-# Setting up test/dev environment
+# Or setting up docker test/dev environment:
 
 To just start up the provided example:
 
