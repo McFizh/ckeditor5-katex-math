@@ -1,3 +1,5 @@
+import Katex from 'katex';
+
 import View from '@ckeditor/ckeditor5-ui/src/view';
 import ViewCollection from '@ckeditor/ckeditor5-ui/src/viewcollection';
 
@@ -13,6 +15,7 @@ import cancelIcon from '@ckeditor/ckeditor5-core/theme/icons/cancel.svg';
 import submitHandler from '@ckeditor/ckeditor5-ui/src/bindings/submithandler';
 
 import TextareaView from './textareaview';
+import HelpTextView from './helptextview';
 
 export default class MainFormView extends View {
   constructor(locale) {
@@ -21,8 +24,18 @@ export default class MainFormView extends View {
     // Create key event & focus trackers
     this.createKeyAndFocusTrackers();
 
+    // Create help texts
+    const textView1 = new HelpTextView(locale, 'Insert tex equation:');
+    const textView2 = new HelpTextView(locale, 'Equation preview:');
+    this.renderView = new HelpTextView(locale, '');
+
     // Create buttons & select element
-    const children = this.createUiElements(locale);
+    const children = [
+      textView1,
+      ...this.createUiElements(locale),
+      textView2,
+      this.renderView
+    ];
 
     // Add ui elements to template
     this.setTemplate({
@@ -93,6 +106,7 @@ export default class MainFormView extends View {
     this.mathTextarea = new TextareaView(locale);
     this.mathTextarea.on('texchanged', (e, data) => {
       this.saveBtn.isEnabled = data !== '';
+      Katex.render(data, this.renderView.element);
     });
 
 

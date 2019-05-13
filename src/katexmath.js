@@ -5,6 +5,7 @@ import ContextualBalloon from '@ckeditor/ckeditor5-ui/src/panel/balloon/contextu
 import clickOutsideHandler from '@ckeditor/ckeditor5-ui/src/bindings/clickoutsidehandler';
 
 import pluginIcon from '../theme/icons/icon.svg';
+import './katexmath.css';
 
 import MainFormView from './ui/mainformview';
 

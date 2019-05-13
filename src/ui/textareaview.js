@@ -1,5 +1,4 @@
 import View from '@ckeditor/ckeditor5-ui/src/view';
-// import Katex from 'katex';
 
 export default class TextareaView extends View {
   constructor(locale) {
