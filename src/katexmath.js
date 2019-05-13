@@ -8,6 +8,7 @@ import pluginIcon from '../theme/icons/icon.svg';
 import './katexmath.css';
 
 import MainFormView from './ui/mainformview';
+import insertMathCommand from './katexmathcmd';
 
 export default class KatexMath extends Plugin {
   static get requires() {
@@ -31,6 +32,9 @@ export default class KatexMath extends Plugin {
 
     // Register UI events
     this.registerEventHandlers(editor);
+
+    // Register math command
+    editor.commands.add('insertmath', new insertMathCommand(editor));
   }
 
   registerSchema(editor) {
@@ -112,6 +116,7 @@ export default class KatexMath extends Plugin {
 
     // Listen to 'submit' button click
     this.listenTo(formView, 'submit', () => {
+      editor.execute('insertmath', this.formView.texEq);
       this.removePluginUiForm();
     });
 

@@ -29,6 +29,11 @@ export default class MainFormView extends View {
     const textView2 = new HelpTextView(locale, 'Equation preview:');
     this.renderView = new HelpTextView(locale, '');
 
+    //
+    this.set({
+      texEq: ''
+    });
+
     // Create buttons & select element
     const children = [
       textView1,
@@ -106,6 +111,7 @@ export default class MainFormView extends View {
     this.mathTextarea = new TextareaView(locale);
     this.mathTextarea.on('texchanged', (e, data) => {
       this.saveBtn.isEnabled = data !== '';
+      this.texEq = data;
       Katex.render(data, this.renderView.element);
     });
 

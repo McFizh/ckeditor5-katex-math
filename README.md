@@ -13,9 +13,9 @@ Note: WIP project, so plugin is mostly useless for the time being.
 
 Run the following commands:
 
-npm ci
-cd example
-npm ci
+npm ci\
+cd example\
+npm ci\
 npm run start:dev
 
 Then open browser to address: http://localhost:8080  (or 8081, if 8080 is reserved)
