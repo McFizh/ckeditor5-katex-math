@@ -6,10 +6,6 @@
   margin: 5px 10px;
 }
 
-.ck.ck-kmath-textdiv .katex-html {
-  display: none;
-}
-
 .ck.ck-kmath-textarea {
   margin: 0px 10px;
   min-width: 300px;

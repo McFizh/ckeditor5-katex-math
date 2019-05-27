@@ -1,5 +1,6 @@
 import './index.html';
 import EditorDemo from './EditorDemo.js';
+import 'katex/dist/katex.css';
 
 var editor = new EditorDemo();
 editor.createEditor(document.getElementById('ckeditor'));

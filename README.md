@@ -3,7 +3,7 @@
 
 # ckeditor5-katex-math
 
-Katex math plugin for ckeditor 5. Example folder contains demo showing the plugin in action (see next section), content is not needed for plugin to work.
+Katex math plugin for ckeditor 5. Example folder contains demo showing the plugin in action (see next section), content is not needed for plugin to work. But remember to include katex css styles and fonts to your application, plugin doesn't do that for you.
 
 Note: WIP project, so plugin is mostly useless for the time being.
 
