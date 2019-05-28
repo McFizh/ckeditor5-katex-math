@@ -27,7 +27,7 @@ export default class MainFormView extends View {
     // Create help texts
     const textView1 = new HelpTextView(locale, 'Insert tex equation:');
     const textView2 = new HelpTextView(locale, 'Equation preview:');
-    this.renderView = new HelpTextView(locale, '');
+    this.renderView = new HelpTextView(locale, '', 'ck-kmath-preview');
 
     //
     this.set({

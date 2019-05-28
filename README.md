@@ -5,7 +5,11 @@
 
 Katex math plugin for ckeditor 5. Example folder contains demo showing the plugin in action (see next section), content is not needed for plugin to work. But remember to include katex css styles and fonts to your application, plugin doesn't do that for you.
 
-Note: WIP project, so plugin is mostly useless for the time being.
+Math equations are added to HTML in following form:
+
+`<span class='math-text'>f=x*2</span>`
+
+Note: WIP project, so plugin is somewhat useless for the time being.
 
 ![Edit UI](docs/images/screenshot_1.png)
 
