@@ -90,6 +90,12 @@ export default class KatexMath extends Plugin {
 
     // Remove CK editor reset styles (they interfere with katex)
     const balloonHolder = this.balloon.view.element.parentNode;
+    Array.prototype.forEach.call(balloonHolder.children, e => {
+      if ( Array.prototype.find.call(e.classList, c => c ==='ck-toolbar-container' ) ) {
+        e.classList.add('ck-reset_all');
+      }
+    });
+
     balloonHolder.classList.remove('ck-reset_all');
 
     // Create contextual balloon (ui for plugin)
@@ -105,6 +111,12 @@ export default class KatexMath extends Plugin {
     // Restore ckeditor reset style
     const balloonHolder = this.balloon.view.element.parentNode;
     balloonHolder.classList.add('ck-reset_all');
+
+    Array.prototype.forEach.call(balloonHolder.children, e => {
+      if ( Array.prototype.find.call(e.classList, c => c ==='ck-toolbar-container' ) ) {
+        e.classList.remove('ck-reset_all');
+      }
+    });
 
     // Finally focus the view back to editor
     this.editor.editing.view.focus();

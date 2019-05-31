@@ -5,7 +5,23 @@
 </head>
 <body>
   <div style="width: 60%; margin: 0 auto;">
-    <div id="ckeditor">
+    <h3>Inline editor:</h3>
+    <div id="ckeditor-inline">
+      <p>
+        Example text above math equation
+      </p>
+      <p>
+        <span class="math-tex">x = {-b \pm \sqrt{b^2-4ac} \over 2a}</span>
+      </p>
+      <p>
+        Example text below math equation
+      </p>
+    </div>
+
+    <hr>
+
+    <h3>Classic editor:</h3>
+    <div id="ckeditor-classic">
       <p>
         Example text above math equation
       </p>
@@ -19,7 +35,7 @@
     <br />
     <div style="text-align: center">
       <button id="getDataBtn">Call editors getData() method</button><br/>
-      <span style="font-size: 80%">(Button fetches data from editor & renders katex elements)</span><br />
+      <span style="font-size: 80%">(Button fetches data from classic editor & renders katex elements)</span><br />
     </div>
     <br />
     <div id="editorContent"></div>
