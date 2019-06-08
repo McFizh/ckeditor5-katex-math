@@ -1,6 +1,6 @@
 {
   "name": "ckeditor5-katex-math",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Katex math plugin for ckeditor 5",
   "main": "src/katexmath.js",
   "keywords": [
@@ -16,7 +16,7 @@
   "dependencies": {
     "@ckeditor/ckeditor5-core": "^12.1.0",
     "@ckeditor/ckeditor5-engine": "^13.1.0",
-    "@ckeditor/ckeditor5-ui": "^12.1.0",
+    "@ckeditor/ckeditor5-ui": "^13.0.0",
     "katex": "^0.10.2"
   },
   "devDependencies": {
