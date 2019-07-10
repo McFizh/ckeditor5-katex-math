@@ -14,12 +14,12 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@ckeditor/ckeditor5-core": "^12.1.0",
-    "@ckeditor/ckeditor5-engine": "^13.1.0",
-    "@ckeditor/ckeditor5-ui": "^13.0.0",
+    "@ckeditor/ckeditor5-core": "^12.2.0",
+    "@ckeditor/ckeditor5-engine": "^13.2.0",
+    "@ckeditor/ckeditor5-ui": "^13.0.1",
     "katex": "^0.10.2"
   },
   "devDependencies": {
-    "eslint": "^5.16.0"
+    "eslint": "^6.0.1"
   }
 }
