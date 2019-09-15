@@ -52,7 +52,7 @@ module.exports = {
           {
             test: /ckeditor5-[^/]+\/theme\/[\w-/]+\.css$/,
             use: [
-              { loader: 'style-loader', options: { singleton: true } },
+              { loader: 'style-loader', options: { injectType: "singletonStyleTag" } },
               {
                 loader: 'postcss-loader',
                 options: styles.getPostCssConfig({

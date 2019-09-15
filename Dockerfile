@@ -6,4 +6,4 @@ WORKDIR /plugin
 RUN npm ci
 WORKDIR /plugin/example
 RUN npm ci
-CMD ["npm","run","start:dev"]
+CMD ["npm","run","start:dev","--host 0.0.0.0"]
