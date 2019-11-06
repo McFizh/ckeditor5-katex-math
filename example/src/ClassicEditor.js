@@ -5,7 +5,10 @@ import BoldPlugin from '@ckeditor/ckeditor5-basic-styles/src/bold';
 import ItalicPlugin from '@ckeditor/ckeditor5-basic-styles/src/italic';
 import ParagraphPlugin from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 
+// Note, you should import plugin from the npm package, not with relative path
 import KatexMathPlugin from '../../src/katexmath.js';
+
+class ClassicEditor extends ClassicEditorBase {}
 
 ClassicEditor.builtinPlugins = [
   BoldPlugin,
@@ -23,4 +26,4 @@ ClassicEditor.defaultConfig = {
   ]
 };
 
-export default class ClassicEditor extends ClassicEditorBase {}
+export default ClassicEditor;

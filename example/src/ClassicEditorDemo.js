@@ -15,7 +15,7 @@ export default class ClassicEditorDemo {
       .create(el, {
       })
       .then(editor => {
-        CKEditorInspector.attach('editor', editor);
+        CKEditorInspector.attach({editor: editor});
         this.instance = editor;
       });
   }
