@@ -1,7 +1,7 @@
 import ClassicEditor from './ClassicEditor';
 import CKEditorInspector from '@ckeditor/ckeditor5-inspector';
 
-export default class EditorDemo {
+export default class ClassicEditorDemo {
   constructor() {
     this.instance = null;
   }

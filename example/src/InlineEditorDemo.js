@@ -7,7 +7,7 @@ import ParagraphPlugin from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 
 import KatexMathPlugin from '../../src/katexmath.js';
 
-export default class EditorDemo {
+export default class InlineEditorDemo {
   constructor() {
     this.instance = null;
   }
